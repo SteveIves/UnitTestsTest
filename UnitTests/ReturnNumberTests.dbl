@@ -17,15 +17,17 @@ namespace UnitTests
 ;        proc
 ;        endmethod
 ;
-;        {ClassInitialize}
-;        public method ClassInitialize, void
-;        proc
-;        endmethod
-;
-;        {ClassCleanup}
-;        public method ClassCleanup, void
-;        proc
-;        endmethod
+        {ClassInitialize}
+        public method ClassInitialize, void
+        proc
+            Console.WriteLine("In ClassInitialize")
+        endmethod
+
+        {ClassCleanup}
+        public method ClassCleanup, void
+        proc
+            Console.WriteLine("In ClassCleanup")
+        endmethod
 
         {TestInitialize}
         public method TestInitialize, void
