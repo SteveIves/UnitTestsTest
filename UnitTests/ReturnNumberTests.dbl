@@ -6,7 +6,9 @@ namespace UnitTests
     public class ReturnNumberTests
 
         private testsRun, int
-
+;
+;       No support for these yet.
+;
 ;        {AssemblyInitialize}
 ;        public method AssemblyInitialize, void
 ;        proc
@@ -27,6 +29,7 @@ namespace UnitTests
         public method ClassCleanup, void
         proc
             Console.WriteLine("In ClassCleanup")
+            Console.WriteLine("A total of " + %string(testsRun) + " tests were run")
         endmethod
 
         {TestInitialize}
@@ -37,8 +40,12 @@ namespace UnitTests
         proc
             Console.WriteLine("In TestInitialize")
 
-            ;Retrieve the "Test file" property from the test we are about to run!
-            propertyValue = TestProperties.GetProperty("Test file")
+            ;Some issues here, we're working on it!
+;            ;Do we have a "Test file" property in the test we're about to run?
+;            if (TestProperties.TryGetProperty("TestFile",propertyValue))
+;            begin
+;                Console.WriteLine("TestFile is " + %atrim(propertyValue))
+;            end
 
         endmethod
         
@@ -88,11 +95,11 @@ namespace UnitTests
             Assert.AreEqual(%return5,5,0)
         endmethod
 
-        {Ignore("Why????")}
         {TestMethod}
         {TestCategory("Stupid Number Tests")}
+        {Ignore("We know this fails and we're working on it!")}
         {Owner("Steve Ives")}
-        {TestProperty("Test file","fred.txt")}
+        {TestProperty("TestFile","TestReturn6.txt")}
         public method TestReturn6, void
         proc
             testsRun+=1
