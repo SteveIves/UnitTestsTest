@@ -31,8 +31,15 @@ namespace UnitTests
 
         {TestInitialize}
         public method TestInitialize, void
+            record
+                propertyValue, string
+            endrecord
         proc
             Console.WriteLine("In TestInitialize")
+
+            ;Retrieve the "Test file" property from the test we are about to run!
+            propertyValue = TestProperties.GetProperty("Test file")
+
         endmethod
         
         {TestCleanup}
@@ -81,12 +88,15 @@ namespace UnitTests
             Assert.AreEqual(%return5,5,0)
         endmethod
 
+        {Ignore("Why????")}
         {TestMethod}
         {TestCategory("Stupid Number Tests")}
+        {Owner("Steve Ives")}
+        {TestProperty("Test file","fred.txt")}
         public method TestReturn6, void
         proc
             testsRun+=1
-            Assert.AreEqual(%return6,6,0)
+            Assert.AreEqual(6,%return6,0)
         endmethod
 
         {TestMethod}
