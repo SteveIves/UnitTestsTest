@@ -1,0 +1,116 @@
+﻿import Synergex.TestFramework
+
+namespace UnitTests
+
+    {TestClass}
+    public class ReturnNumberTests
+
+        private testsRun, int
+
+;        {AssemblyInitialize}
+;        public method AssemblyInitialize, void
+;        proc
+;        endmethod
+;
+;        {AssemblyCleanup}
+;        public method AssemblyCleanup, void
+;        proc
+;        endmethod
+;
+;        {ClassInitialize}
+;        public method ClassInitialize, void
+;        proc
+;        endmethod
+;
+;        {ClassCleanup}
+;        public method ClassCleanup, void
+;        proc
+;        endmethod
+
+        {TestInitialize}
+        public method TestInitialize, void
+        proc
+            Console.WriteLine("In TestInitialize")
+        endmethod
+        
+        {TestCleanup}
+        public method TestCleanup, void
+        proc
+            Console.WriteLine("In TestCleanup")
+        endmethod
+        
+        {TestMethod}
+        {TestCategory("Stupid Number Tests")}
+        public method TestReturn1, void
+        proc
+            testsRun+=1
+            Assert.AreEqual(%return1,1,0)
+        endmethod
+
+        {TestMethod}
+        {TestCategory("Stupid Number Tests")}
+        public method TestReturn2, void
+        proc
+            testsRun+=1
+            Assert.AreEqual(%return2,2,0)
+        endmethod
+
+        {TestMethod}
+        {TestCategory("Stupid Number Tests")}
+        public method TestReturn3, void
+        proc
+            testsRun+=1
+            Assert.AreEqual(%return3,3,0)
+        endmethod
+
+        {TestMethod}
+        {TestCategory("Stupid Number Tests")}
+        public method TestReturn4, void
+        proc
+            testsRun+=1
+            Assert.AreEqual(%return4,4,0)
+        endmethod
+
+        {TestMethod}
+        {TestCategory("Stupid Number Tests")}
+        public method TestReturn5, void
+        proc
+            testsRun+=1
+            Assert.AreEqual(%return5,5,0)
+        endmethod
+
+        {TestMethod}
+        {TestCategory("Stupid Number Tests")}
+        public method TestReturn6, void
+        proc
+            testsRun+=1
+            Assert.AreEqual(%return6,6,0)
+        endmethod
+
+        {TestMethod}
+        {TestCategory("Stupid Number Tests")}
+        public method TestReturn7, void
+        proc
+            testsRun+=1
+            Assert.AreEqual(%return7,7,0)
+        endmethod
+
+        {TestMethod}
+        {TestCategory("Stupid Number Tests")}
+        public method TestReturn8, void
+        proc
+            testsRun+=1
+            Assert.AreEqual(%return8,8,0)
+        endmethod
+
+        {TestMethod}
+        {TestCategory("Stupid Number Tests")}
+        public method TestReturn9, void
+        proc
+            testsRun+=1
+            Assert.AreEqual(%return9,9,0)
+        endmethod
+
+    endclass
+
+endnamespace

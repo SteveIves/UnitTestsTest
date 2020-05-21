@@ -1,0 +1,45 @@
+
+function return1, ^val
+proc
+    freturn 1
+endfunction
+
+function return2, ^val
+proc
+    freturn 2
+endfunction
+
+function return3, ^val
+proc
+    freturn 3
+endfunction
+
+function return4, ^val
+proc
+    freturn 4
+endfunction
+
+function return5, ^val
+proc
+    freturn 5
+endfunction
+
+function return6, ^val
+proc
+    freturn 3
+endfunction
+
+function return7, ^val
+proc
+    freturn 7
+endfunction
+
+function return8, ^val
+proc
+    freturn 8
+endfunction
+
+function return9, ^val
+proc
+    freturn 10
+endfunction
