@@ -34,3 +34,5 @@ OutputFiles
 /UpgradeLog.htm
 
 /ftp.tmp
+/Debug/x64/UnitTests.elb
+/Debug/x64/MyLibrary.elb
